@@ -48,10 +48,44 @@
 
 ### Ответ 1
 
+### Подготовка к выполнению заданий
+
+   1. Подготовка защищаемой системы:
+
+   - установите **Suricata**,
+   - установите **Fail2Ban**.
+
+   2. Подготовка системы злоумышленника: установите nmap и thc-hydra либо скачайте и установите **Kali linux**.
+
+Обе системы должны находиться в одной подсети.
+
+*Защищаемая система - UBUNTU - 192.168.0.10*
+
+```python
+sudo apt install suricata
+sudo suricata-update —no-test
+# 2/4/2026 -- 10:02:47 - <Info> -- Writing rules to /var/lib/suricata/rules/suricata.rules: total: 60768; enabled: 44983; added: 60768; removed 0; modified: 0
+sudo nano /etc/suricata/suricata.yaml
+# EXTERNAL_NET: "any"
+# af-packet:
+# interface: enp0s3
+# default-rule-path: /var/lib/suricata/rules
+sudo systemctl restart suricata.service
+sudo systemctl status suricata.service
+sudo suricata -c /etc/suricata/suricata.yaml -i enp0s3
+sudo tail -f /var/log/suricata/fast.log
 
 
+sudo apt install fail2ban
+sudo systemctl status fail2ban
+
+```
 
 ------
+
+111111111111
+22222222222222
+
 
 ### Задание 2
 
