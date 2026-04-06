@@ -85,11 +85,53 @@ Fail2Ban во всех случаях молчал, но я подозреваю
 
 Дополнительная информация по **Fail2Ban**:https://putty.org.ru/articles/fail2ban-ssh.html.
    
-### Дополнительные материалы, которые могут быть полезны для выполнения задания
-
-1. [Руководство по оформлению Markdown файлов](https://gist.github.com/Jekins/2bf2d0638163f1294637#Code)
 
 ### Ответ 2
+
+
+*Fail2ban выключен*
+
+Пароль подобран. В логе файла auth видна операция подбора пароля. Suricata также показывает сканирование ssh. Лог-файл Fail2ban ничего не показал.
+
+111111111111
+<img width="1853" height="271" alt="111111111" src="https://github.com/user-attachments/assets/9ab5718d-3485-4b15-b696-7f19b6b2e1cd" />
+
+
+22222222222222222
+
+<img width="1850" height="515" alt="22222222" src="https://github.com/user-attachments/assets/450bd14e-0164-45de-9a16-5f483fbcdbeb" />
+
+
+333333333333333
+
+<img width="1335" height="787" alt="33333333333" src="https://github.com/user-attachments/assets/d4e4d6a7-a29d-474e-90b7-660384c3fdd2" />
+
+
+*Fail2ban включен и в настройках файла включена строка `enable = true`* 
+
+Попытка подключения не удалась.
+В данном случае Suricata показывает постоянное сканирование ssh с классификацией "Возможна утечка информации".
+Лог файла auth показывает попытки подбора пароля.
+Лог-файл Fail2ban также показывает попытку подключения. Также видно, что через некоторое время атакующая машина была разбанена. Но после включения попытки подобрать пароль, опять была заблокирована.
+
+44444444444444
+
+<img width="1851" height="317" alt="4444444" src="https://github.com/user-attachments/assets/fa5bf5fb-c53d-468d-8eec-017dd595549d" />
+
+
+555555555555555
+
+<img width="1783" height="432" alt="555555555" src="https://github.com/user-attachments/assets/067af0d2-c63c-4cc3-af4c-79db9873b345" />
+
+
+6666666666666
+
+<img width="1415" height="673" alt="666666666" src="https://github.com/user-attachments/assets/16fc5586-eb1c-4c41-8fb0-4873aeca6921" />
+
+
+77777777777777
+
+<img width="1072" height="555" alt="77777777777" src="https://github.com/user-attachments/assets/bc4a1057-ba8b-458a-a6a9-9c54a4269d12" />
 
 
 
