@@ -48,88 +48,19 @@
 
 ### Ответ 1
 
-### Подготовка к выполнению заданий
+Suricata сработал везде, кроме первого запроса -sA. В остальных же  случаях лог Suricata выдает, что происходило подозрительное скарирование и классификация идет как "Потенциально опасный трафик" и "Возможна утечка информации". 
 
-   1. Подготовка защищаемой системы:
+Fail2Ban во всех случаях молчал, но я подозреваю, что входящий трафик просто уже заблокирован ранее, когда я повторял упражнения из лекции. И о чем также видно из последнего скришота.
 
-   - установите **Suricata**,
-   - установите **Fail2Ban**.
+<img width="992" height="838" alt="111111" src="https://github.com/user-attachments/assets/a97b1019-038c-4982-99b9-a31817b680f7" />
 
-   2. Подготовка системы злоумышленника: установите nmap и thc-hydra либо скачайте и установите **Kali linux**.
+<img width="1582" height="798" alt="222222" src="https://github.com/user-attachments/assets/cb6dbbe7-4331-4a8c-9f50-89747c524909" />
 
-Обе системы должны находиться в одной подсети.
+<img width="1334" height="251" alt="333333" src="https://github.com/user-attachments/assets/45131dc2-3de8-4c89-af06-281eff62d222" />
 
-*Защищаемая система - UBUNTU - 192.168.0.10*
+<img width="885" height="215" alt="44444" src="https://github.com/user-attachments/assets/0c8fcb17-ea07-416b-a205-f9d11f22d464" />
 
-```python
-sudo apt install suricata
-sudo suricata-update —no-test
-# 2/4/2026 -- 10:02:47 - <Info> -- Writing rules to /var/lib/suricata/rules/suricata.rules: total: 60768; enabled: 44983; added: 60768; removed 0; modified: 0
-sudo nano /etc/suricata/suricata.yaml
-# EXTERNAL_NET: "any"
-# af-packet:
-# interface: enp0s3
-# default-rule-path: /var/lib/suricata/rules
-sudo systemctl restart suricata.service
-sudo systemctl status suricata.service
-sudo suricata -c /etc/suricata/suricata.yaml -i enp0s3
-sudo tail -f /var/log/suricata/fast.log
-
-
-sudo apt install fail2ban
-sudo systemctl status fail2ban
-
-```
-
-------
-
-111111111111;
-22222222222222;
-
-*Система злоумышленника - KALI LINUX - 192.168.0.12*
-
-3333333333;
-
----
-
-В качестве ответа пришлите события, которые попали в логи Suricata и Fail2Ban, прокомментируйте результат.
-
-*sudo nmap -sA 192.168.0.10*
-
-Suricata никак не отриагировала на сканирование.
-
-44444444;
-
-*sudo nmap -sT 192.168.0.10*
-
-Suricata отражает опасный трафик на порты 3306 MySQL, 1521 Oracle SQL, 1433 MSSQL, 5432 PostgeSQL. Помимо этого наблюдается сканирование VNC 5800-5820 как "Попытка утечки информации".
-
-
-5555555;
-
-6666666;
-
-*sudo nmap -sS 192.168.0.10*
-
-Suricata отражает опасный трафик на те же порты, что и при сканировании -sT, при этом порт системы злоумышленника и порт защищаемой системы при сканировании VNC 5800-5820 изменился.
-
-77777;
-
-88888;
-
-*sudo nmap -sV 192.168.0.10*
-
-Suricata отражает опасный входящий трафик.
-
-9999;
-
-10 ;
-
-*Fail2Ban* во время сканирования никак не отреагировал ни на одну из команд.
-
-11111111111;
-
-----
+<img width="828" height="243" alt="555555" src="https://github.com/user-attachments/assets/9e5495ac-ead6-4105-bf02-7fb3b4a95fc8" />
 
 
 
