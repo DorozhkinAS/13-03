@@ -52,13 +52,13 @@ Suricata сработал везде, кроме первого запроса -
 
 Fail2Ban во всех случаях молчал, но я подозреваю, что входящий трафик просто уже заблокирован ранее, когда я повторял упражнения из лекции. И о чем также видно из последнего скришота.
 
-<img width="992" height="838" alt="111111" src="https://github.com/user-attachments/assets/a97b1019-038c-4982-99b9-a31817b680f7" />
+<img width="992" height="797" alt="111111" src="https://github.com/user-attachments/assets/d5d59625-73b9-4c10-ae6f-a9036701f8a2" />
 
 <img width="1582" height="798" alt="222222" src="https://github.com/user-attachments/assets/cb6dbbe7-4331-4a8c-9f50-89747c524909" />
 
 <img width="1334" height="251" alt="333333" src="https://github.com/user-attachments/assets/45131dc2-3de8-4c89-af06-281eff62d222" />
 
-<img width="885" height="215" alt="44444" src="https://github.com/user-attachments/assets/0c8fcb17-ea07-416b-a205-f9d11f22d464" />
+<img width="885" height="215" alt="44444" src="https://github.com/user-attachments/assets/df770d87-370c-46a1-873e-abfb8ee6c06c" />
 
 <img width="828" height="243" alt="555555" src="https://github.com/user-attachments/assets/9e5495ac-ead6-4105-bf02-7fb3b4a95fc8" />
 
