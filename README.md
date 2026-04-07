@@ -93,18 +93,12 @@ Fail2Ban во всех случаях молчал, но я подозреваю
 
 Пароль подобран. В логе файла auth видна операция подбора пароля. Suricata также показывает сканирование ssh. Лог-файл Fail2ban ничего не показал.
 
-111111111111
-<img width="1853" height="271" alt="111111111" src="https://github.com/user-attachments/assets/9ab5718d-3485-4b15-b696-7f19b6b2e1cd" />
 
+<img width="1853" height="242" alt="111111111" src="https://github.com/user-attachments/assets/85524144-b747-49e8-a6b9-8af9b35d63ad" />
 
-22222222222222222
+<img width="1613" height="515" alt="22222222" src="https://github.com/user-attachments/assets/45a25acb-3744-4120-bd43-3b4b7f69851e" />
 
-<img width="1850" height="515" alt="22222222" src="https://github.com/user-attachments/assets/450bd14e-0164-45de-9a16-5f483fbcdbeb" />
-
-
-333333333333333
-
-<img width="1335" height="787" alt="33333333333" src="https://github.com/user-attachments/assets/d4e4d6a7-a29d-474e-90b7-660384c3fdd2" />
+<img width="1335" height="787" alt="33333333333" src="https://github.com/user-attachments/assets/f6669b4a-5181-453f-a587-e43ce706034b" />
 
 
 *Fail2ban включен и в настройках файла включена строка `enable = true`* 
@@ -114,25 +108,14 @@ Fail2Ban во всех случаях молчал, но я подозреваю
 Лог файла auth показывает попытки подбора пароля.
 Лог-файл Fail2ban также показывает попытку подключения. Также видно, что через некоторое время атакующая машина была разбанена. Но после включения попытки подобрать пароль, опять была заблокирована.
 
-44444444444444
 
-<img width="1851" height="317" alt="4444444" src="https://github.com/user-attachments/assets/fa5bf5fb-c53d-468d-8eec-017dd595549d" />
+<img width="1851" height="277" alt="4444444" src="https://github.com/user-attachments/assets/e30d8cfa-5c9f-4f16-94af-129271302db2" />
 
+<img width="1551" height="432" alt="555555555" src="https://github.com/user-attachments/assets/06a0069c-3350-4f52-9b23-f5712273fd0f" />
 
-555555555555555
+<img width="1415" height="673" alt="666666666" src="https://github.com/user-attachments/assets/4562d307-2ff1-4925-9c16-c65ddcd330f0" />
 
-<img width="1783" height="432" alt="555555555" src="https://github.com/user-attachments/assets/067af0d2-c63c-4cc3-af4c-79db9873b345" />
-
-
-6666666666666
-
-<img width="1415" height="673" alt="666666666" src="https://github.com/user-attachments/assets/16fc5586-eb1c-4c41-8fb0-4873aeca6921" />
-
-
-77777777777777
-
-<img width="1072" height="555" alt="77777777777" src="https://github.com/user-attachments/assets/bc4a1057-ba8b-458a-a6a9-9c54a4269d12" />
-
+<img width="741" height="555" alt="77777777777" src="https://github.com/user-attachments/assets/cab86d42-9938-4fc7-a316-73aad85578c4" />
 
 
 ------
